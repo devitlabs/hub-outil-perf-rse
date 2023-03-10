@@ -6,8 +6,7 @@ RUN python3 -m ensurepip
 RUN pip3 install --no-cache --upgrade pip setuptools
 
 RUN mkdir /app/
-COPY ./server /app/
-COPY ./build/web /app/
+COPY . /app/
 WORKDIR /app/
 
 EXPOSE 8080
